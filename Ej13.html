@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descuentoentienda</title>
+    <script>
+        let precio = Number(prompt("Ingrese total de la compra"))
+
+        if(precio < 0){
+            alert("Ingrese un total correcto")
+        }
+        else{
+            let descuento
+            
+            if(precio <= 500){
+                descuento = 0
+            }
+            else if(precio <= 1000){
+                descuento = precio * 0.05
+            }
+            else if(precio <= 7000){
+                descuento = precio * 0.11
+            }
+            else if(precio <= 15000){
+                descuento = precio * 0.18
+            }
+            else{
+                descuento = precio * 0.25
+            }
+
+            alert("descuento a pagar: $ " + descuento)
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

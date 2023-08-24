@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SalarioMenosSeguro</title>
+</head>
+<script>
+    let horas = Number(prompt("Ingrese numero de horas"))
+    let Vhoras = Number(prompt("Ingrese el valor de las horas"))
+
+    if(horas < 0 || Vhoras<0){
+        alert("ingrese un valor valido")
+    }
+    else{
+        if (horas >= 40){
+            salario = (horas * Vhoras) - ((horas * Vhoras) * 0.0945 )
+            
+        }
+        else{
+            salario = (horas * Vhoras) - ((horas * Vhoras) * 0.15 )
+            
+        }
+        alert("salario a recibir: $" + salario)
+    }
+   
+    
+
+</script>
+<body>
+    
+</body>
+</html>

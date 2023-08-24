@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descuentoenlibros</title>
+    <script>
+        let precio = Number(prompt("Ingrese el precio del libro"))
+        let cantidad = Number(prompt("Ingrese la cantidad"))
+
+        if(precio < 0 || cantidad < 0){
+            alert("Ingrese cantidad y precio mayores a cero")
+        }
+        else{
+            let descuento
+            let total
+            Sindescuento = precio * cantidad
+            if(cantidad >= 1 && cantidad <= 3){
+                descuento = Sindescuento * 0.03
+                
+            }
+            else if(cantidad >= 3 && cantidad <= 10){
+                descuento = Sindescuento * 0.05
+            }
+            
+            else{
+                descuento = Sindescuento * 0.1
+            }
+            total = Sindescuento - descuento
+            alert("total a pagar con descuento es: $ " + total)
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
