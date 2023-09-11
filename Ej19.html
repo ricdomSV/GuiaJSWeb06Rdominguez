@@ -3,7 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>10Numerost</title>
+    <script>
+        let numero = [], acu = 0
+
+        for(let i = 0; i < 10; i++){
+            do{
+                numero[i] = Number(prompt(`Ingrese el valor número ${i+1}`))
+                if(numero[i]<0)
+                    alert("El número ingresado es negativo")
+            }while(numero[i]>0 )
+            acu = acu + numero[i]
+        }
+
+        console.log(numero)
+        console.log(acu)
+
+        console.log("El suma de todos los números es: " + acu / numero.length)
+        
+    </script>
 </head>
 <body>
     
